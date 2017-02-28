@@ -1,9 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
-import { RxJsPlaygroundComponent } from './components/RxJsPlayground/rxJsPlayground.component';
+import { ContainerComponent } from './components/RxJsPlaygroundContainer/container.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: 'rxjsPlayground', pathMatch: 'full' },
-	{ path: 'rxjsPlayground', component: RxJsPlaygroundComponent }
+	{ path: 'rxjsPlayground', component: ContainerComponent }
 ];
 
 export const routing = RouterModule.forRoot(routes);

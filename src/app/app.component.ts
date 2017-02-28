@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {RxJsPlaygroundStateService, ComponentModel} from './components/RxJsPlayground/rxJsPlayground.service';
 
 @Component({
 	selector: 'app',
@@ -7,5 +8,8 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
-	
+
+	constructor(public state: RxJsPlaygroundStateService) {
+
+	}
 }
