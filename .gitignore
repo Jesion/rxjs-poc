@@ -1,0 +1,9 @@
+/components
+node_modules
+dist
+dist-tests
+coverage
+/.idea
+.vscode
+*.iml
+.DS_Store
