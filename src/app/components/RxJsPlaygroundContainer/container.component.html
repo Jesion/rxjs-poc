@@ -1,3 +1,5 @@
 <div>
-   <rxjs-playground [state]="service.model | async"></rxjs-playground>
+   <rxjs-playground 
+    [state]="service.model | async" 
+    (onClick)="onClick()"></rxjs-playground>
 </div>

@@ -13,5 +13,9 @@ export class ContainerComponent implements OnInit {
 
     ngOnInit() {
       
-    }    
+    }   
+
+    onClick() {
+      this.service.componentStateSub.next( ComponentModel.create('#0000ff', 'This is an updated label') );
+    } 
 } 

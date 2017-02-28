@@ -1,3 +1,4 @@
 <div>
-    <button [style.background-color]="state.color">{{ state.text }}</button>
+    <button [style.background-color]="state.color" 
+        (click)="onClick()">{{ state.text }}</button>
 </div>    

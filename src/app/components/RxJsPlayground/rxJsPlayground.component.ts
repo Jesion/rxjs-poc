@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { RxJsPlaygroundStateService, ComponentModel } from './rxJsPlayground.service';
 
 @Component({
@@ -10,11 +10,17 @@ export class RxJsPlaygroundComponent implements OnInit {
 
     @Input() state: ComponentModel;
 
+    @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
+
     constructor() {
 
     }
 
     ngOnInit() {
       
-    }    
+    }   
+
+    onClick() {
+      this.onClick.emit();
+    }
 }
