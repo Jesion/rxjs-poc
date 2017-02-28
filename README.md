@@ -1,6 +1,4 @@
-# Dynamic Form POC.
-
-[Demo](http://demo.robertjesionek.com/myform)
+# RxJs POC.
 
 # building and running it
 
