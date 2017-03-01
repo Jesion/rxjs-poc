@@ -20,7 +20,7 @@ export class RxJsPlaygroundComponent implements OnInit {
       
     }   
 
-    onClick() {
+    onButtonClick() {
       this.onClick.emit();
     }
 }
