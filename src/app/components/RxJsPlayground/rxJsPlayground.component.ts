@@ -10,7 +10,11 @@ export class RxJsPlaygroundComponent implements OnInit {
 
     @Input() state: ComponentModel;
 
+    @Input() state2: ComponentModel;
+
     @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
+
+    @Output() onSecondClick: EventEmitter<any> = new EventEmitter<any>();
 
     constructor() {
 
@@ -22,5 +26,9 @@ export class RxJsPlaygroundComponent implements OnInit {
 
     onButtonClick() {
       this.onClick.emit();
+    }
+
+    onSecondButtonClick() {
+      this.onSecondClick.emit();
     }
 }

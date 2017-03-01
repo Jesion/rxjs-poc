@@ -18,4 +18,8 @@ export class ContainerComponent implements OnInit {
     onClick() {
       this.service.componentStateSub.next( ComponentModel.create('#0000ff', 'This is an updated label') );
     } 
+
+    onSecondClick() {
+      this.service.componentStateSubBS.next( ComponentModel.create('#ff0000', 'Changed that again') );
+    }
 } 
